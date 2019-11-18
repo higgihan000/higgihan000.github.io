@@ -1,0 +1,102 @@
+ul {
+    color: darkblue;
+    font-size: 17px;
+    line-height: 2;
+    list-style: none;
+    text-align: center;
+    
+    
+}
+
+h1 {
+    color:#f93;
+    text-align: ;
+    font-size: 40px;
+    font-family: Georgia , fantasy;
+    border-bottom: #ffcc99;
+    border: .3rem;
+}
+
+body {
+    margin: 0 auto;
+    background-color:#ccccff;
+    padding: 50px;
+    border: 5px solid black;
+    text-align: center; 
+      
+}
+
+img {
+    display: ;
+    margin: 0 auto;
+    max-width: 100%;
+  
+}
+
+aside {
+    border: 5px dashed; 
+    background-color: whitesmoke; 
+    padding: 10px;
+
+}
+
+footer {
+    padding: 20px; 
+    font-family: Georgia, fantasy;
+
+}
+
+main {
+    max-width: inherit; 
+    color:#ffff66;
+
+}
+
+section {
+    font-family: Georgia,fantasy, sans-serif; 
+    font-size: 17pxpx; 
+    padding: 10px;
+
+}
+
+header nav ul {
+    display: inline;
+    
+}
+
+figcaption {
+    color: #f93;
+    font-size: 20px;
+
+}
+
+header nav ul li {
+    display: inline; 
+    text-align: center;
+
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: red;
+
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    
+}
+
+/* mouse over link */
+a:hover {
+    color: purple;
+    
+}
+
+/* selected link */
+a:active {
+    color: darkblue;
+}
