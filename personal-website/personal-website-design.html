@@ -1,0 +1,455 @@
+
+<head>
+    <style>
+      html {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer { 
+        border-top: 6px solid #4D4D4D; 
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      /* I picked some really awful colors. Curious to see how many of you modify them. */
+      section h1 { 
+        background-color: thistle;
+        color:#60929C;
+        padding: .5em;;
+        border: 5px solid #60929C;
+        border-radius: 10px;
+        margin-left: -.5em;
+        margin-right: -.5em;
+          
+      }
+      header h1 {
+        background-color: thistle;
+        color: #60929C;
+        padding: .5em;;
+        border-top: 5px solid #60929C;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }       
+      header nav ul {
+        list-style-type: none;
+        background-color:#60929C;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #995c33;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #f8dea5;
+      }
+      #project-plan dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #project-plan dd:last-child {
+        border-bottom: 6px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      #development-guide ul li {
+        line-height: 1.5;
+      }
+      ul.structure,
+      ul.structure ul {
+        list-style: none;
+      }
+      ul.structure li.folder:before {
+        content: "\1F4C1";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      ul.structure li:before {
+        content: "\1f4c4";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      .colorcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 1em;
+      }
+      .color-item {
+        border: 1px solid #000;
+        padding: 1em;
+        margin: 0.5em;
+      }
+      .color-chip {
+        width: 100px;
+        height: 100px;
+      }
+      dl.styles-guide dt {
+        font-weight: bold;
+        border-top: 1px dashed #333;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      .code {
+        font-family: "Courier New", Courier, monospace;
+        color: #993333;
+        font-size: 0.9em;
+        margin-left: 2em;
+      }
+      .highlight {
+        background-color: f7c049;
+        font-weight: bold;
+      }
+      img { width: 100%; }
+    </style>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Your site name</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Site: Natural Moments</h1>
+      <p>
+        Developer: Hanna Higgins<br>
+        <!-- this will automatically update with the file date; no need to change it-->
+        <span id="modified">Updated: Sunday, November 24, 2019</span>
+        <!--end date section-->
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#project-plan">Project plan</a></li>
+          <li><a href="#development-guide">Development guide</a></li>
+          <li><a href="#design-guide">Design guide</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="project-plan">
+        <h1>Project plan</h1>
+        <dl>
+          <dt>Title</dt>
+          <dd><p>Natural Moments</p></dd>
+
+          <dt>Goal</dt>
+          <dd>
+            <p>
+              This website exists to showcase my photography. Share my photos with people who enjoy nature.  
+            </p>
+          </dd>
+          <dt>Target Audience</dt>
+          <dd>
+            <p>
+              Friends or family who want to see my photography. People who enjoy photography and/or nature.
+            </p>
+          </dd>
+          <dt>Main Features</dt>
+          <dd>
+            <p>
+             Photographs, about me page, contact forum, and descriptions of photos. 
+            </p>
+          </dd>
+          <dt>Personality</dt>
+          <dd>
+            <p>The mood of the site will be peaceful, vibrant, cheerful, and nature. </p>
+            <p>I think it will create an inviting mood towards the viewers, give them an uplifting mood.</p>
+          </dd>
+          <dt>Limiting Factors</dt>
+          <dd>
+            <p>
+            I am not sure if all my photos will be in the highest resolution or largest size. 
+            </p>
+          </dd>
+        </dl>
+      </section>
+      <section id="development-guide">
+        <h1>Development guide</h1>
+        <h2>Site structure</h2>
+        <ul>
+          <li>
+            Root Directory
+            <ul>
+              <li>images directory – contains jpgs and gifs</li>
+              <li>styles directory – contains all of the style sheets</li>
+              <li>documents directory – contains documents </li>
+        
+              <li>
+                index.html – home page for site, site purpose and overview
+              </li>
+              <li>
+                about-me.html - a page that explains who I am and what photography means to me. 
+              </li>
+              <li>
+                flower.html - page that contains images of flowers
+              </li>
+              <li>
+                animal.html - page with images of animals
+              </li>
+              <li>
+                mushroom.html - page with images of mushrooms
+              </li>
+                <li>
+                scenery.html - page with images of scenery
+                </li>
+                <li>
+                contact.html - page where people can contact me </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Visual representation of site structure</h2>
+        <ul class="structure">
+          <!-- displays as page icon unless you use class="folder" -->
+          <li class="folder">
+            Root Directory
+            <ul>
+              <li class="folder">images directory – contains jpgs and gifs</li>
+              <li class="folder">
+                styles directory – contains all of the style sheets
+              </li>
+              <li class="folder">
+                documents directory - contains all documents
+              </li>
+             
+              <li>
+                index.html – home page for site, site purpose and overview
+              </li>
+              <li>
+                about-me.html - a page that explains who I am and what photography means to me
+              </li>
+              <li>
+                flower.html - page that contains images of flowers
+              </li>
+              <li>
+                animal.html - page that contains images of animals
+              </li>
+              <li>
+                mushroom.html - page that contains images of mushrooms and fungi
+              </li>
+              <li>
+                scenery.html  - page with images of scenery
+              </li>
+                <li>
+                contact.html - page where people can contact me</li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Navigation elements</h2>
+        <p>
+          Navigation – There is a navigation bar on <span class="highlight">(top/bottom/left/right/insert location here)</span> that links to all pages in the site.
+        </p>
+        
+        <p>
+          Other navigation elements, if you're using them. This could be text and pictures that link to another page, a thumbnail navigation bar on the side, etc.
+        </p>
+        <h3>Navigation structure</h3>
+        <ul>
+          <li>Home</li>
+          <li>
+            Page name or description
+            <ul>
+              <li>
+                What navigation will be on this page? (Number of links to other pages or websites)
+              </li>
+            </ul>
+          </li>
+          <li>
+            Page name or description
+            <ul>
+              <li>
+                  What navigation will be on this page? (Number of links to other pages or websites)
+              </li>
+            </ul>
+          </li>
+          <li>
+              Page name or description
+              <ul>
+                <li>
+                    What navigation will be on this page? (Number of links to other pages or websites)
+                </li>
+              </ul>
+            </li>
+            <li>
+                Page name or description
+                <ul>
+                  <li>
+                      What navigation will be on this page? (Number of links to other pages or websites)
+                  </li>
+                </ul>
+              </li>
+              <li>
+                  Page name or description
+                  <ul>
+                    <li>
+                        What navigation will be on this page? (Number of links to other pages or websites)
+                    </li>
+                  </ul>
+                </li>
+        </ul>
+        <h2>HTML template</h2>
+        <p>
+          I will be basing my pages on <span class="highlight">(link to your own example template, not to mine)</span> 
+          <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html">this HTML template</a>.
+        </p>
+        <h2>Wireframe site</h2>
+        <p>
+            <span class="highlight">These (Link to your wireframes) wireframes</span> let you navigate
+          the basic structure of my site.
+        </p>
+      </section>
+      <section id="design-guide">
+        <h1>Design guide</h1>
+        <h2>Color Palette</h2>
+        <p>
+          The following is the list of colors that may be used. Tints or changes
+          in opacity may also be used as long as they compliment each other.
+        </p>
+        <p><span class="highlight">Replace the color values with your own colors. Leave the rest of the code alone unless you really want to recode it.</span></p>
+        <div class="colorcontainer">
+          <div class="color-item">
+            <p>Burgundy</p>
+            <p>#8C5A63</p>
+            <div class="color-chip" style="background-color: #8C5A63"></div>
+          </div>
+          <div class="color-item">
+            <p>Light Pink</p>
+            <p>#6699CC</p>
+            <div class="color-chip" style="background-color: #F2C9D1"></div>
+          </div>
+          <div class="color-item">
+            <p>Light Olive Green</p>
+            <p>#CFDACC</p>
+            <div class="color-chip" style="background-color:#CFDACC"></div>
+          </div>
+          <div class="color-item">
+            <p>Teal</p>
+            <p>#76A1A6</p>
+            <div class="color-chip" style="background-color: #76A1A6"></div>
+          </div>
+          <div class="color-item">
+            <p>Sea Green</p>
+            <p>#AFBF73</p>
+            <div class="color-chip" style="background-color: #AFBF73"></div>
+          </div>
+          <div class="color-item">
+            <p>Coal Black</p>
+            <p>#483E49</p>
+            <div class="color-chip" style="background-color: #483E49"></div>
+          </div>
+        </div>
+        
+
+        <h2>Media assets</h2>
+        <h3>General Guidelines</h3>
+        <ul>
+          <li>
+            <p><span class="highlight">Example text:</span> Images optimized as JPG using the Photoshop save for web feature to
+            determine the best choice. Photos generally saved as JPG.</p>
+            
+          <li>All images are taken and owned by me.</li>
+        </ul>
+        <h2>Styles guide 
+         
+      </h2>
+        <dl class="styles-guide">
+          <dt>Background</dt>
+          <dd>
+            <p>Background is light olive green</p>
+            <p class="code">{background-color: #cfdacc;}
+          </dd>
+          <dt>Default font</dt>
+          <dd>
+            <p>Text is coal black, 14 pixels</p>
+            <p class="code">p { font-size: 14px; color: #483e49;}</p>
+          </dd>
+        
+          <dt>Header</dt>
+          <dd>
+            <p>
+              The header section is 235px tall, positioned along the top of each page. The background is Burgundy.
+            </p>
+            <p class="code">
+              header { <br>height: 235px; <br>background-color: #8C5A63; <br>
+                background-image: url("/images/whale.png"); <br>background-repeat: no-repeat; <br>
+                background-position: center; <br>background-size: cover;<br>}</p>
+          </dd>
+          <dt>Navigation</dt>
+          <dd>
+            <p>
+                The main navigation is 120px tall, positioned just below the header with a 
+                background color of Light Oliver Green.
+            </p>
+            <p class="code">
+              nav { height: 120px; background-color: #CFDACC; }
+            </p>
+          </dd>
+          <dt>Images</dt>
+          <dd>
+            <p>
+              Images will be over light pink background with a grey border
+              around the container
+            </p>
+            <p class="code">
+              figure { background-color: #6699CC; border: 2px solid #333333; }
+            </p>
+            <p class="code">img { padding: 1em; }</p>
+          </dd>
+          <dt>Links</dt>
+          <dd>
+            <p>
+              Links will be Teal. On hover, they will have a red
+              background and a light pink border.</p>
+            <p></p>
+            <p class="code">a { color: #76A1A6 }</p>
+            <p class="code">a:hover { background-color: #fflala; border 2px dotted ##F2C9D1; }</p>
+          </dd>
+        </dl>
+        <h2>Layout sketch</h2>
+        <img src="layout.png" alt="Site layout sketch; email me for details if you can't see it">
+      </section>
+    </main>
+    <footer>
+      ©Hanna Higgins
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- Scri pt below includes file date update -->
+
+    <script>
+      includeHTML();
+      // get last updated date as a new date object
+      var modDate = new Date(document.lastModified);
+      // set up some formatting options
+      var options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      };
+      // format it
+      var modDateString = modDate.toLocaleDateString("en-US", options);
+      // display it in the document
+      document.getElementById("modified").innerHTML =
+        "Updated: " + modDateString;
+    </script>
+  
+
+</body>
