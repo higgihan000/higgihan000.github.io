@@ -1,0 +1,37 @@
+#flower {background-color: #F2C9D1;;
+        font-family: Optima, sans-serif;
+}
+
+#scn {
+    background-color: #76A1A6;
+    font-family: Optima, sans-serif;}
+
+#mush {
+    background-color: #8C5A63;
+    font-family: Optima, sans-serif;
+}
+
+ #nature {
+
+    font-family: Optima, sans-serif;
+  
+}
+footer {
+  
+    bottom: 0;
+
+}
+
+#purpose {font-size: 1.5em;
+        font-family: Optima, sans-serif
+
+}
+
+#recents {    font-family: Optima, sans-serif;
+    
+}
+
+.current {
+    background-color: cadetblue;
+    text-decoration: underline;
+}
